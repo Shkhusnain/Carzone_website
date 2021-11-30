@@ -3,8 +3,15 @@
 {% load static %}
 
 {% block branding %}
-  <img src="{% static 'img/logos/black-logo.png' %}" alt="logo" class="brand_img" height="50" width="300">
+  <a href="/admin"><img src="{% static 'img/logos/black-logo.png' %}" alt="logo" class="brand_img" height="50" width="300"></a>
 {% endblock %}
+ 
+{% block extrastyle %}
+
+<link rel="stylesheet" href="{% static 'css/admin.css' %}">
+
+{% endblock %}
+
 
 
 
